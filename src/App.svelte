@@ -20,7 +20,7 @@
     loading.style.display = "flex";
     preview.style.display = "block";
     preview.src = URL.createObjectURL(file);
-    label.textContent = file.name;
+    label.textContent = `Change file (${file.name})`;
     const reader = new FileReader();
     reader.onloadend = () => {
       const imageDataUri = reader.result;
